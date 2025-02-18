@@ -1,9 +1,12 @@
 {
+  "homepage": "https://kw2008.github.io/mwema2",
   "name": "charity",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "deploy": "vite build && gh-pages -d dist",
+    "predeploy": "vite build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
